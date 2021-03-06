@@ -12,7 +12,7 @@ const Library = ({songs, currentSong, setCurrentSong, audioRef, isPlaying, setSo
         {
           songs.map((song) => {
             return (
-              <LibrarySong setSongs={setSongs}  currentSong={currentSong} setCurrentSong={setCurrentSong} songs={songs} song={song} key={song.id} audioRef={audioRef} isPlaying={isPlaying} />
+              <LibrarySong setSongs={setSongs} currentSong={currentSong} setCurrentSong={setCurrentSong} songs={songs} song={song} key={song.id} audioRef={audioRef} isPlaying={isPlaying} />
             )
           })
         }
