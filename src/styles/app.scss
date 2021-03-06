@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  color: rgb(54, 54, 54);
+}
+
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./nav";
