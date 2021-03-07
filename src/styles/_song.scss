@@ -17,6 +17,31 @@
   h3 {
     font-size: 1rem;
   }
-  
+  .square-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: none;
+  }
+  .square {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    margin-top: 20px;
+    transition: 600ms;
+  }
 }
 
+
+@media screen and (max-width: 768px) {
+  .song-container {
+
+    img {
+      width: 60%;
+    }
+  
+  }
+
+}

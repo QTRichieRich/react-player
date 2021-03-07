@@ -23,9 +23,10 @@ html {
   font-weight: 900;
 }
 .library {
+  background: #fff;
   position: fixed;
   top: 0;
-  width: 20vw;
+  width: 30vw;
   height: 100%;
   left: 0;
   box-shadow: 2px 2px 50px rgb(227, 227, 227);
@@ -73,6 +74,27 @@ html {
   }
 }
 
+.title-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  display: none;
+  padding: 7px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 1.3;
+  margin: 10px;
+  background: var(--thumbBG);
+  border-radius: 50%;
+  overflow: hidden;
+  color: #fff;
+  cursor: pointer;
+}
 .song-description {
   padding-left: 0.5rem;
   h3 {
@@ -95,5 +117,18 @@ html {
   img {
     transform: scale(1.18);
     transform-origin: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .library {
+    width: 100%;
+  }
+  .close-button {
+    display: block;
+  }
+  .library-song img {
+    max-width: 70px
   }
 }

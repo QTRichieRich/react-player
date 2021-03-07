@@ -2,8 +2,8 @@ import React from 'react';
 
 const LibrarySong = ({song, setCurrentSong, currentSong, audioRef, isPlaying, songs, setSongs}) => {
 
-  const setCurrentSongHandler = () => {
-    setCurrentSong(song);
+  const setCurrentSongHandler = async () => {
+    await setCurrentSong(song);
 
     const newSongs = songs.map((currentSong) => {
       if (currentSong === song) {
@@ -20,15 +20,8 @@ const LibrarySong = ({song, setCurrentSong, currentSong, audioRef, isPlaying, so
     })
 
     setSongs(newSongs);
-
-    if (isPlaying) {
-      const playPromise = audioRef.current.play();
-      if (playPromise !== undefined) {
-        playPromise.then((audio) => {
-          audioRef.current.play();
-        });
-      }
-    }
+    if (isPlaying) audioRef.current.play();
+    
   }
  
   return (
