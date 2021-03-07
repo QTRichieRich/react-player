@@ -12,6 +12,14 @@ h1, h2, h3 {
   color: rgb(54, 54, 54);
 }
 
+.App {
+  transition: 600ms ease-in-out;
+
+  &.library-open {
+    margin-left: 30%;
+  }
+}
+
 @import "./player";
 @import "./song";
 @import "./library";

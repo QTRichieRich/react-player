@@ -32,12 +32,16 @@ input[type="range"] {
   &:focus {
     outline: none;
   }
+  &::-moz-range-thumb,
   &::-webkit-slider-thumb {
+    -moz-appearance: none;
     -webkit-appearance: none;
     height: 16px;
     width: 16px;
   }
-
+  &::-moz-range-thumb {
+    opacity: 0;
+  }
 }
 
 .track {
