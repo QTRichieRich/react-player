@@ -27,6 +27,7 @@ html {
   position: fixed;
   top: 0;
   width: 30vw;
+  max-width: 320px;
   height: 100%;
   left: 0;
   box-shadow: 2px 2px 50px rgb(227, 227, 227);
@@ -61,6 +62,7 @@ html {
 
   img {
     width: 30%;
+    max-width: 70px;
     border-radius: 50%;
     margin: 0.2rem;
     transition: 800ms cubic-bezier(.88,.07,.38,.83); 
@@ -124,6 +126,8 @@ html {
 
   .library {
     width: 100%;
+    max-width: none;
+
   }
   .close-button {
     display: block;
