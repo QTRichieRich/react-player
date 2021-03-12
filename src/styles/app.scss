@@ -14,7 +14,14 @@ h1, h2, h3 {
 
 .App {
   transition: 600ms ease-in-out;
-
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  width: 100vw;
+  
   &.library-open {
     margin-left: 30%;
   }
